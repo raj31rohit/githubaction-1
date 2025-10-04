@@ -5,6 +5,9 @@ jobs:
     first_jobs:
         runs-on: ubuntu-latest
         steps: 
+
+            - name: git checkout 
+              uses: checkout@v4
             - name: welcome message
               run: echo "My first checking"
             
