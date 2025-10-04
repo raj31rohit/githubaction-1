@@ -1,0 +1,17 @@
+name: myfirst work floww
+on: push
+
+jobs:
+    first_jobs:
+        runs-on: ubuntu-latest
+        steps: 
+            - name: welcome message
+              run: echo "My first checking"
+            
+            - name: list files
+              run: ls
+
+            - name: Read files
+              run: cat README.md
+              
+
