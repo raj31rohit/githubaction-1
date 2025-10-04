@@ -7,7 +7,7 @@ jobs:
         steps: 
 
             - name: git checkout 
-              uses: checkout@v4
+              uses: actions/checkout@v4
             - name: welcome message
               run: echo "My first checking"
             
