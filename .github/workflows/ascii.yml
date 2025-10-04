@@ -1,0 +1,19 @@
+name: ascii art work 
+
+on: push 
+
+jobs:
+    ascii-artwork:
+        runs-on: ubuntu-latest
+        steps:
+            - name: git checkout 
+              uses: actions/checkout@v4
+            
+            - name: multiline inst
+              run: |
+               echo "welcome "
+               ls -lrth
+               cat README.md
+
+
+
