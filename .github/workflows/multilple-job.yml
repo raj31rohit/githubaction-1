@@ -31,4 +31,4 @@ jobs:
             name: dragon-file
 
         - name: read downloaded file
-          run: cat dragon-file
+          run: cat dragon-file.txt
