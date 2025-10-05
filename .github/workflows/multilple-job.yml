@@ -10,10 +10,19 @@ jobs:
               uses: actions/checkout@v4
 
             - name: Installing cowsay command
-              run: sudo apt-get install cowsay -y 
+              run: sudo apt-get install cowsay -y
 
-            - name: Executing the cowsay command 
-              run: cowsay -f dragon "I am dranon, Run cowsay command: " >> dragon.txt
+            - name: Executing the cowsay 
+              run: cowsay -f dragon "I am dragin, Run the code for dragon" >> dragon.txt
+
+            - name: upload artifect
+              uses: actions/upload-artifect@v4
+              with:
+                name: dragon-file
+                path: dragon.txt
+
+            # - name: Executing the cowsay command 
+            #   run: cowsay -f dragon "I am dranon, Run cowsay command: " >> dragon.txt
 
             # - name: Uploading the atrtifect 
             #   run:  actions/upload-artifact@v4
