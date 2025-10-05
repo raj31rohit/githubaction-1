@@ -15,9 +15,9 @@ jobs:
             - name: Executing the cowsay command 
               run: cowsay -f dragon "I am dranon, Run cowsay command: " >> dragon.txt
 
-            - name: Uploading the atrtifect 
-              run:  actions/upload-artifact@v4
-              with:
-                name: dragon-file
-                path: dragon.txt
+            # - name: Uploading the atrtifect 
+            #   run:  actions/upload-artifact@v4
+            #   with:
+            #     name: dragon-file
+            #     path: dragon.txt
                 
